@@ -1,5 +1,6 @@
+'use strict';
 function whoAmI() {
-  console.log("My name is Zak and I\'m 33 years old");
+  console.log('My name is Zak and I\'m 33 years old');
 }
 
 whoAmI();
