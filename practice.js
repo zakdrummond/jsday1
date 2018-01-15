@@ -1,6 +1,6 @@
 'use strict';
-function whoAmI() {
-  console.log('My name is Zak and I\'m 33 years old');
+function whoAmI(name, age) {
+  console.log(`My name is ${name} and I'm ${age} years old`);
 }
 
-whoAmI();
+whoAmI('Zak', 33);
