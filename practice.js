@@ -17,16 +17,10 @@ function whoAmI(name, age) {
   if (yob === undefined) {
     return 'please enter your true age';
   }
-  if (typeof name !== 'string') {
-    console.error('arguments not valid');
+  if (typeof name !== 'string' || typeof age !== 'number') {
+    return 'please enter valid arguments';
   }
-  else if (typeof age !== 'number') {
-    console.error('arguments not valid');
-  }
-  else {
-    return `My name is ${name} and I'm ${age} years old. I was born in ${yob}.`;
-  }
-  //console.log(`I was born in ${yob}`);
+  return `My name is ${name} and I'm ${age} years old. I was born in ${yob}.`;
 }
 
 console.log(whoAmI('Zak', 33));
